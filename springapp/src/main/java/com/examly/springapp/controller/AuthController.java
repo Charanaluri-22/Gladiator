@@ -39,7 +39,6 @@ public class AuthController {
      * @param userService the `UserService` implementation.
      */
 
-    @Autowired
     private AuthController(UserService userService){
         this.userService = userService;
     }

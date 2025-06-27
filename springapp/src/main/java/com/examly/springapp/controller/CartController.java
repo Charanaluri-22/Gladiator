@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.examly.springapp.config.JwtAuthenticationFilter;
 import com.examly.springapp.model.Cart;
 import com.examly.springapp.service.CartService;
 

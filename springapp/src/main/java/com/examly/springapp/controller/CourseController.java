@@ -111,7 +111,7 @@ public class CourseController {
     @Operation(description="Deletion of course by courseId")
     @ApiResponse(responseCode="200",description="Status code after deletion of course by courseId")
     @DeleteMapping("/{courseId}")
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<Boolean> deleteCourse(@PathVariable long courseId) {
         logger.info("INSIDE DELETE");
         boolean course = courseService.deleteCourse(courseId);

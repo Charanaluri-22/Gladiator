@@ -4,7 +4,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.examly.springapp.exception.NoContentException;
@@ -34,7 +33,6 @@ public class ReviewServiceImpl implements ReviewService {
      * 
      * @param reviewRepo the repository for managing `Review` entity data access.
      */
-    @Autowired
     public ReviewServiceImpl(ReviewRepo reviewRepo) {
         this.reviewRepo = reviewRepo;
     }
